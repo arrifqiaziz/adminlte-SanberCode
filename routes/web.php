@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('items.index');
 });
 
 Route::get('/master', function () {
     return view('adminlte.master');
 });
 
-Route::get('/items', function () {
-    return view('items.index');
+Route::get('/data-tables', function () {
+    return view('items.data-tables');
 });
